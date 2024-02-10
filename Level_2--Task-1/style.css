@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #17202A;
+}
+
+#logo {
+    font-weight: bold;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.para-content {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #fff;
+    margin: 20px 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    border-bottom: #fff 4px double;
+}
+
+a {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+#main > img {
+    border-radius: 10%;
+}
+
+footer {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f5f5f5;
+}
+
+
+footer{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding: 15px 0px;
+    background-color: #333;
+    color: #fff;
+}
+
+table{
+    width: 80%;
+    border: #fff 2px solid;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,td{
+    border: #fff 2px solid;
+    text-align: center;
+    padding: 15px;
+}
+
+dl > dt{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+dl > dt::before{
+    content: "🔹";
+}
+
+dl > dd{
+    margin-left: 10%;
+}
+
+.timeline{
+    list-style-type: "▶  ";
+    margin: 20px 0px;
+    border-left: #fff 2px dashed;
+}
+
+li{
+    margin: 20px 0;
+}
+
+.other-awards{
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.gallery figure {
+    margin: 2px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    flex: 1 0 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 600px) {
+    .gallery img {
+        flex: 1 0 50%;
+    }
+}
+
+@media screen and (min-width: 900px) { /* On large screens (900px and wider), each image will take up 33.33% of the width (i.e., three images per row) */
+    .gallery img {
+        flex: 1 0 33.33%;
+    }
+}
+
+footer > a {
+    color: #fff;
+    font-family: cursive;
+    text-decoration: underline;
+}
