@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: #17202A;
+    background: linear-gradient(90deg,#FF671F,#FFFFFF,#FFFFFF,#046A38);
 }
 
 #logo {
@@ -39,7 +39,7 @@ main{
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.8;
-    color: #fff;
+    color: #06038D;
     margin: 20px 17%;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ main{
 .heading{
     font-family: "Roboto", Arial, sans-serif;
     font-size: 18px;
-    border-bottom: #fff 4px double;
+    border-bottom: #06038D 4px double;
 }
 
 a {
@@ -64,14 +64,14 @@ a {
     border-radius: 10%;
 }
 
-footer {
+/* footer {
     font-family: "Arial", sans-serif;
     font-size: 14px;
     color: #888;
     text-align: center;
     padding: 15px 0;
-    background-color: #f5f5f5;
-}
+    background-color: #06038D;
+} */
 
 
 footer{
@@ -81,18 +81,18 @@ footer{
     bottom: 0;
     padding: 15px 0px;
     background-color: #333;
-    color: #fff;
+    color: #FFFFFF;
 }
 
 table{
     width: 80%;
-    border: #fff 2px solid;
+    border: #06038D 2px solid;
     border-collapse: collapse;
     margin: 20px 0;
 }
 
 th,td{
-    border: #fff 2px solid;
+    border: #06038D 2px solid;
     text-align: center;
     padding: 15px;
 }
@@ -113,7 +113,7 @@ dl > dd{
 .timeline{
     list-style-type: "▶  ";
     margin: 20px 0px;
-    border-left: #fff 2px dashed;
+    border-left: #06038D 2px dashed;
 }
 
 li{
@@ -132,8 +132,8 @@ li{
 }
 
 .gallery figure {
-    margin: 2px;
-    background-color: black;
+    margin: 5px;
+    background-color: #050443;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,20 +146,43 @@ li{
     object-fit: cover;
 }
 
+.gallery figcaption {
+    padding: 2px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
 @media screen and (min-width: 600px) {
     .gallery img {
         flex: 1 0 50%;
     }
 }
 
-@media screen and (min-width: 900px) { /* On large screens (900px and wider), each image will take up 33.33% of the width (i.e., three images per row) */
+@media screen and (min-width: 900px) {
     .gallery img {
         flex: 1 0 33.33%;
     }
 }
 
 footer > a {
-    color: #fff;
+    animation-name: flag;
+    animation-duration: 3s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
     font-family: cursive;
     text-decoration: underline;
+}
+
+@keyframes flag {
+    0% {
+        color: #FF671F;
+    }
+    50% {
+        color: #FFFFFF;
+    }
+    100% {
+        color: #119656;
+    }
 }
